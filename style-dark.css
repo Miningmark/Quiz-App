@@ -1,0 +1,10 @@
+:root{
+    --text-color: white;
+    --main-brand-color: darkred;
+    --secondary-brand-color: darkred;
+    --border-color: black;
+    --baground-color: #202020;
+    --secondary-baground-color: #303030;
+
+    --font-normal: nuito;
+}

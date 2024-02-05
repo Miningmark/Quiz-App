@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <link id="style-mode" rel="stylesheet" href="style-light.css">
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
                     <div class="profile-dark-mode">
                         <h3>Dark Mode</h3>
                         <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" id="test" onclick="toggleCheckbox()">
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -49,5 +50,18 @@
         </nav>
     </footer>
     
+    
+    <script>
+        function toggleCheckbox() {
+            var stylesheet = document.getElementById("style-mode");
+            if(document.getElementById("test").checked == true){
+                stylesheet.setAttribute('href', 'style-dark.css');
+            }else{
+                stylesheet.setAttribute('href', 'style-light.css');
+            }
+        }
+    </script>
+    
+
 </body>
 </html>

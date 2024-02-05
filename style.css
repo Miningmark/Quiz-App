@@ -10,15 +10,6 @@
     src: url(assets/font/Nunito-Bold.woff2) format(woff2),
          url(assets/font/Nunito-Bold.woff2) format(woff);
 }
-:root{
-    --text-color: black;
-    --main-brand-color: aqua;
-    --secondary-brand-color: aquamarine;
-    --border-color: black;
-    --baground-color: white;
-
-    --font-normal: nuito;
-}
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +30,7 @@ p, span, a, li{
 }
 body{
     height: 100vh;
+    background-color: var(--baground-color);
 }
 
 /*--------------------------------------------Header-----------------------------------------------------------*/
@@ -73,6 +65,8 @@ section{
     position: relative;
     margin: 40px 0 0 0;
     border: solid var(--border-color) 3px;
+    border-radius: 10px;
+    background-color: var(--secondary-baground-color);
 }
 .question-bookmark-checkbox {
     display: none; 
