@@ -1,17 +1,47 @@
+@font-face{
+    font-family:'nunito';
+    font-weight: 100;
+    src: url(assets/font/Nunito-Regular.woff2) format(woff2),
+         url(assets/font/Nunito-Regular.woff) format(woff);
+}
+@font-face{
+    font-family:'nunito';
+    font-weight: bold;
+    src: url(assets/font/Nunito-Bold.woff2) format(woff2),
+         url(assets/font/Nunito-Bold.woff2) format(woff);
+}
 :root{
-    --text-color: white;
+    --text-color: black;
     --main-brand-color: aqua;
     --secondary-brand-color: aquamarine;
     --border-color: black;
     --baground-color: white;
+
+    --font-normal: nuito;
 }
 *{
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style:none;
+    padding:0;
+}
+h1, h2, h3{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+p, span, a, li{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: 100;
+    color: var(--text-color);
+}
 body{
     height: 100vh;
 }
+
+/*--------------------------------------------Header-----------------------------------------------------------*/
 header{
     text-align: center;
     padding: 30px;
@@ -20,11 +50,14 @@ header{
     top: 0;
     z-index: 1;
 }
+/*------------------------------------------MAIN--------------------------------------------------------------*/
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: scroll;
+    padding-bottom: 60px;
 }
 section{
     display: flex;
@@ -41,27 +74,43 @@ section{
     margin: 40px 0 0 0;
     border: solid var(--border-color) 3px;
 }
-.question-bookmark{
+.question-bookmark-checkbox {
+    display: none; 
+}
+.question-bookmark-label {
     position: absolute;
     top: -24px;
     right: 15px;
+    width: 48px;
+    height: 48px;
+    background-image: url('assets/icons/bookmark_border_black.svg'); 
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+}
+.bookmark-checked {
+    background-image: url('assets/icons/bookmark_black.svg'); 
 }
 .question-text{
     margin: 20px;
     text-align: center;
 }
-.question-answer-box{
+.question-categories-box{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
+    flex-wrap: wrap;
 }
-.question-answer{
+.question-category{
     margin: 10px 0 10px 10px;
     padding: 5px;
     border: solid var(--border-color) 2px;
     border-radius: 10px;
 }
+
+
+
 
 
 
@@ -73,6 +122,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 50px;
 }
 nav{
     width: 100%;
