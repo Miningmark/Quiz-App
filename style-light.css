@@ -3,8 +3,9 @@
     --main-brand-color: aqua;
     --secondary-brand-color: aquamarine;
     --border-color: black;
-    --baground-color: white;
-    --secondary-baground-color: white;
+    --background-color: white;
+    --secondary-background-color: white;
+    --menu-background-color: antiquewhite;
 
     --font-normal: nuito;
 }

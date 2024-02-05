@@ -30,7 +30,7 @@ p, span, a, li{
 }
 body{
     height: 100vh;
-    background-color: var(--baground-color);
+    background-color: var(--background-color);
 }
 
 /*--------------------------------------------Header-----------------------------------------------------------*/
@@ -66,7 +66,7 @@ section{
     margin: 40px 0 0 0;
     border: solid var(--border-color) 3px;
     border-radius: 10px;
-    background-color: var(--secondary-baground-color);
+    background-color: var(--secondary-background-color);
 }
 .question-bookmark-checkbox {
     display: none; 
@@ -89,6 +89,10 @@ section{
     margin: 20px;
     text-align: center;
 }
+.question-show-answer{
+    padding: 10px;
+    border-radius: 5px;
+}
 .question-categories-box{
     width: 100%;
     display: flex;
@@ -101,6 +105,7 @@ section{
     padding: 5px;
     border: solid var(--border-color) 2px;
     border-radius: 10px;
+    background-color: var(--background-color);
 }
 
 
@@ -117,6 +122,7 @@ footer{
     align-items: center;
     width: 100%;
     height: 50px;
+    background-color: var(--secondary-backkground-color);
 }
 nav{
     width: 100%;
@@ -133,8 +139,8 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 33%;
-    background-color: var(--baground-color);
+    width: 33.33%;
+    background-color: var(--background-color);
 }
 a{
     text-decoration: none;
@@ -142,6 +148,7 @@ a{
 .menu-item {
     width: 100%;
     text-align: center;
+    background-color: var(--menu-background-color);
 }
 .activ-menu{
     background-color: var(--secondary-brand-color);
@@ -181,6 +188,7 @@ a{
     border: solid var(--border-color) 2px;
     display: flex;
     align-items: center;
+    background-color: var(--secondary-background-color);
 }
 .profile-counter img{
     width: 30px;
@@ -231,7 +239,7 @@ a{
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--baground-color);
+    background-color: var(--background-color);
     -webkit-transition: .4s;
     transition: .4s;
 }

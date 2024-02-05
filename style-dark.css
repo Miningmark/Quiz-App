@@ -3,8 +3,9 @@
     --main-brand-color: darkred;
     --secondary-brand-color: darkred;
     --border-color: black;
-    --baground-color: #202020;
-    --secondary-baground-color: #303030;
+    --background-color: #202020;
+    --secondary-background-color: #303030;
+    --menu-background-color: #404040;
 
     --font-normal: nuito;
 }
