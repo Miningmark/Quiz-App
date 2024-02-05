@@ -139,6 +139,10 @@ li{
 a{
     text-decoration: none;
 }
+.menu-item {
+    width: 100%;
+    text-align: center;
+}
 .activ-menu{
     background-color: var(--secondary-brand-color);
 }
