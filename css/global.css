@@ -1,0 +1,83 @@
+@font-face{
+    font-family:'nunito';
+    font-weight: 100;
+    src: url(assets/font/Nunito-Regular.woff2) format(woff2),
+         url(assets/font/Nunito-Regular.woff) format(woff);
+}
+@font-face{
+    font-family:'nunito';
+    font-weight: bold;
+    src: url(assets/font/Nunito-Bold.woff2) format(woff2),
+         url(assets/font/Nunito-Bold.woff2) format(woff);
+}
+:root{
+    --font-normal: nuito;
+}
+.light{
+    --text-color: black;
+    --main-brand-color: aqua;
+    --secondary-brand-color: aquamarine;
+    --border-color: black;
+    --background-color: white;
+    --secondary-background-color: white;
+    --menu-background-color: antiquewhite;
+}
+.dark{
+    --text-color: white;
+    --main-brand-color: darkred;
+    --secondary-brand-color: darkred;
+    --border-color: black;
+    --background-color: #202020;
+    --secondary-background-color: #303030;
+    --menu-background-color: #404040;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+h1, h2, h3{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+p, span, a, li{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: 100;
+    color: var(--text-color);
+}
+body{
+    height: 100vh;
+    background-color: var(--background-color);
+}
+nav{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    padding-bottom: 60px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: var(--main-brand-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
