@@ -107,12 +107,7 @@ section{
     border-radius: 10px;
     background-color: var(--background-color);
 }
-
-
-
-
-
-
+/*------------------------------------------FOOTER--------------------------------------------------------------*/
 footer{
     position: fixed;
     bottom: 0;
@@ -153,8 +148,7 @@ a{
 .activ-menu{
     background-color: var(--secondary-brand-color);
 }
-
-
+/*------------------------------------------PROFILE-PAGE--------------------------------------------------------------*/
 .profile-person{
     display: flex;
     flex-direction: row;
@@ -208,8 +202,7 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-
-/*Toggle Button*/
+/*------------------------------------------Toggle Button--------------------------------------------------------------*/
 .switch {
     position: relative;
     display: inline-block;

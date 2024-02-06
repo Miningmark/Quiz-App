@@ -2,6 +2,8 @@
 let style = sessionStorage.getItem("syle");
 let stylesheet = document.getElementById("style-mode");
 
+loadStyle();
+
 function loadStyle(){
     switch (style) {
         case "dark":
@@ -12,11 +14,5 @@ function loadStyle(){
             break;
     }
 }
-
-
-window.onload = function() {
-    loadStyle();
-};
-
 
 
