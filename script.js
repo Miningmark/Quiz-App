@@ -22,14 +22,15 @@ window.onload = function() {
     loadStyle();
 };
 
-    const label = document.querySelector('.question-bookmark-label');
+    const allBookmarks = document.querySelectorAll('.question-bookmark-label');
 
-    label.addEventListener('click', function () {
-        //console.log(label.id);
-        label.classList.toggle('bookmark-checked');
+    allBookmarks.forEach(function (labelIcon){
+        labelIcon.addEventListener('click', function () {
+            //console.log(label.id);
+            labelIcon.classList.toggle('bookmark-checked');
+        });
+
     });
-
-
  
 
 });
