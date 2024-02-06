@@ -10,6 +10,27 @@
     src: url(assets/font/Nunito-Bold.woff2) format(woff2),
          url(assets/font/Nunito-Bold.woff2) format(woff);
 }
+:root{
+    --font-normal: nuito;
+}
+.light{
+    --text-color: black;
+    --main-brand-color: aqua;
+    --secondary-brand-color: aquamarine;
+    --border-color: black;
+    --background-color: white;
+    --secondary-background-color: white;
+    --menu-background-color: antiquewhite;
+}
+.dark{
+    --text-color: white;
+    --main-brand-color: darkred;
+    --secondary-brand-color: darkred;
+    --border-color: black;
+    --background-color: #202020;
+    --secondary-background-color: #303030;
+    --menu-background-color: #404040;
+}
 *{
     margin: 0;
     padding: 0;

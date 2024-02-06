@@ -1,29 +1,27 @@
-
-
+let body = document.querySelector('[data-js="body"]');
 let style = sessionStorage.getItem("syle");
-let stylesheet = document.getElementById("style-mode");
+
+
+loadStyle();
 
 function loadStyle(){
     switch (style) {
         case "dark":
-            stylesheet.setAttribute('href', 'style-dark.css');
+            body.classList.remove("light");
+            body.classList.add("dark");
             break;
         case "light":
-            stylesheet.setAttribute('href', 'style-light.css');
+            body.classList.remove("dark");
+            body.classList.add("light");
             break;
     }
 }
 
-
-window.onload = function() {
-    loadStyle();
-};
-
 const allBookmarks = document.querySelectorAll('.question-bookmark-label');
-
+//console.log(allBookmarks);
 allBookmarks.forEach(function (labelIcon){
     labelIcon.addEventListener('click', function () {
-        //console.log(label.id);
+        //console.log(labelIcon.id);
         labelIcon.classList.toggle('bookmark-checked');
     });
 
