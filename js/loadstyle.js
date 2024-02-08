@@ -1,5 +1,5 @@
 let bodyElement = document.querySelector('[data-js="body"]');
-let style = sessionStorage.getItem("syle");
+let style = sessionStorage.getItem("style");
 
 loadStyle();
 

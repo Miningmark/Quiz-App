@@ -18,13 +18,13 @@
     right: 15px;
     width: 48px;
     height: 48px;
-    background-image: url('assets/icons/bookmark_border_black.svg'); 
+    background-image: url('../../assets/icons/bookmark_border_black.svg'); 
     background-size: cover;
     cursor: pointer;
     display: inline-block;
 }
 .bookmark-checked {
-    background-image: url('assets/icons/bookmark_black.svg'); 
+    background-image: url('../../assets/icons/bookmark_black.svg'); 
 }
 .question-text{
     margin: 20px;
