@@ -1,0 +1,9 @@
+.createQuestion{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 10px;
+}
+.questionPreview{
+    margin-top: 20px;
+}
