@@ -48,3 +48,7 @@
     border-radius: 10px;
     background-color: var(--background-color);
 }
+.questionAnswer{
+    margin: 10px;
+    font-size: 1.1rem;
+}
