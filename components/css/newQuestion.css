@@ -1,0 +1,15 @@
+.createQuestion{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 10px;
+}
+.questionPreview{
+    margin-top: 20px;
+}
+.createButton{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    align-self: center;
+}

@@ -44,7 +44,7 @@ h1, h2, h3{
     font-weight: bold;
     color: var(--text-color);
 }
-p, span, a, li{
+p, span, a, li, label{
     font-family: var(--font-normal), sans-serif;
     font-weight: 100;
     color: var(--text-color);

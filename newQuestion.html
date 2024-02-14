@@ -6,7 +6,7 @@
     <title>Quiz App</title>
     <link rel="shortcut icon" href="/assets/icons/help_outline_black.svg">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script2.js" defer></script>
+    <script src="js/script4.js" defer></script>
     <script src="js/loadstyle.js" defer></script>
 </head>
 <body class="light" data-js="body">
@@ -14,7 +14,31 @@
         <h1>Quiz App</h1>
     </header>
     <main>
-        <p>TEST</p>
+        <h2>Add new Question</h2>
+        <form data-js="form">
+            <fieldset class="createQuestion">
+                <label for="question">Question:</label>
+                <input type="text" name="question" id="question" autocomplete="off">
+                <label for="answer">Answer:</label>
+                <input type="text" name="answer" id="answer" autocomplete="off">
+                <label for="categories">Categories (list separated by ","):</label>
+                <input type="text" name="categories" id="categories" autocomplete="off">
+                <button type="submit" class="createButton">Create</button>
+            </fieldset>
+        </form>
+        <h3 class="questionPreview">Preview</h3>
+        <section class="question-card" id="questionID0">
+            <input type="checkbox" class="question-bookmark-checkbox" id="checkboxID0">
+            <label for="bookmarkCheckbox" class="question-bookmark-label" id="labelID0"></label>
+            <h2 class="question-text">???</h2>
+            <button class="question-show-answer">Show Answer</button>
+            <p class="questionAnswer">???</p>
+            <div class="question-categories-box">
+                <span class="question-category">???</span>
+                <span class="question-category">???</span>
+                <span class="question-category">???</span>
+            </div>
+        </section>
     </main>
     <footer>
         <nav>
