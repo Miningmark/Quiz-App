@@ -14,20 +14,20 @@ let shouldY = 0;
 document.addEventListener('mousemove', function (event) {
   mousePosX = event.clientX;
   mousePosY = event.clientY;
-  //mouseEffect();
+  mouseEffect();
 });
 
 document.addEventListener("scroll", function (event) {
   scrollX = window.scrollX;
   scrollY = window.scrollY;
-  //mouseEffect();
+  mouseEffect();
 });
 
 
 
 function mouseEffect(){
   shouldX = mousePosX + scrollX;
-  shouldY = mousePosX + scrollX;
+  shouldY = mousePosY + scrollY;
   circle.style.top = shouldY + "px";
   circle.style.left = shouldX + "px";
 }
