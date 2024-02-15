@@ -17,12 +17,18 @@
         <h2>Add new Question</h2>
         <form data-js="form">
             <fieldset class="createQuestion">
-                <label for="question">Question:</label>
-                <input type="text" name="question" id="question" autocomplete="off">
-                <label for="answer">Answer:</label>
-                <input type="text" name="answer" id="answer" autocomplete="off">
-                <label for="categories">Categories (list separated by ","):</label>
-                <input type="text" name="categories" id="categories" autocomplete="off">
+                <label class="input">
+                    <input class="inputField" type="text" placeholder=" " autocomplete="off" id="question" required/>
+                    <span class="inputLabel">Question:</span>
+                </label>
+                <label class="input">
+                    <input class="inputField" type="text" placeholder=" " autocomplete="off" id="answer" required/>
+                    <span class="inputLabel">Answer:</span>
+                </label>
+                <label class="input">
+                    <input class="inputField" type="text" placeholder=" " autocomplete="off" id="categories" required/>
+                    <span class="inputLabel">Categories (separated by ","):</span>
+                </label>
                 <button type="submit" class="createButton">Create</button>
             </fieldset>
         </form>

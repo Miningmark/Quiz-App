@@ -2,20 +2,6 @@
 
 const form = document.querySelector('[data-js="form"]');
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-    //save to DB
-    event.target.reset();
-    resetInputPreview();
-    event.target.elements.question.focus();
-
-});
-
-
-//----------Preview Questioncard---------------------
 //output fields
 const title = document.querySelector(".question-text");
 const answer = document.querySelector(".questionAnswer");
@@ -25,19 +11,43 @@ const questionInput = document.getElementById('question');
 const answerInput = document.getElementById('answer');
 const categoriesInput = document.getElementById('categories');
 
-form.addEventListener("input", () => {
-    
-    title.textContent = questionInput.value;
-    answer.textContent = answerInput.value;
+//--------------Submit new Question---------------------------------
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
     const categoryList = categoriesInput.value.split(",");
-    categories.innerHTML = "";
-    categoryList.forEach(category => {
-        const categoryItem = document.createElement("span");
-        categoryItem.textContent = category;
-        categoryItem.classList.add("question-category");
-        categories.appendChild(categoryItem);
-    });
+    const data = {
+        question: questionInput.value,
+        answer: answerInput.value,
+        categories: categoryList,
+    };
+    //save to DB
+    console.log(data);
+    event.target.reset();
+    resetInputPreview();
+    event.target.elements.question.focus();
+
+});
+
+
+//----------Preview Questioncard---------------------
+form.addEventListener("input", () => {
+    if(questionInput.value.length > 0){
+        title.textContent = questionInput.value;
+    }
+    if(answerInput.value.length > 0){
+        answer.textContent = answerInput.value;
+    }
+    if(categoriesInput.value.length > 0){
+        const categoryList = categoriesInput.value.split(",");
+        categories.innerHTML = "";
+        categoryList.forEach(category => {
+            const categoryItem = document.createElement("span");
+            categoryItem.textContent = category;
+            categoryItem.classList.add("question-category");
+            categories.appendChild(categoryItem);
+        });
+    }
 
 });
 

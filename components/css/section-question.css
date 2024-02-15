@@ -49,6 +49,6 @@
     background-color: var(--background-color);
 }
 .questionAnswer{
-    margin: 10px;
+    margin-top: 10px;
     font-size: 1.1rem;
 }
