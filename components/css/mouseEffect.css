@@ -8,6 +8,5 @@
     left: 50%;
     margin: -20px 0 0 -20px;
     pointer-events: none;
-    mix-blend-mode: multiply;
     z-index: 0;
   }
