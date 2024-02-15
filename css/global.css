@@ -16,30 +16,16 @@
 .light{
     --text-color: black;
     --main-brand-color: aqua;
-    --secondary-brand-color: aquamarine;
+    --secondary-brand-color: #fab700;
     --border-color: black;
     --background-color: white;
     --secondary-background-color: white;
-    --menu-background-color: antiquewhite;
-
-
-
-
-    --color-light: white;
-  --color-dark: #212121;
-  --color-signal: #fab700;
-  
-  --color-background: var(--color-light);
-  --color-text: var(--color-dark);
-  --color-accent: var(--color-signal);
-  
-  --size-bezel: .5rem;
-  --size-radius: 4px;
+    --menu-background-color: antiquewhite;  
 }
 .dark{
     --text-color: white;
-    --main-brand-color: darkred;
-    --secondary-brand-color: darkred;
+    --main-brand-color: rgb(179, 0, 0);
+    --secondary-brand-color: rgb(125, 0, 0);
     --border-color: black;
     --background-color: #202020;
     --secondary-background-color: #303030;

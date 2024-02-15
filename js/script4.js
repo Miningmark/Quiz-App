@@ -20,15 +20,19 @@ form.addEventListener("submit", (event) => {
         question: questionInput.value,
         answer: answerInput.value,
         categories: categoryList,
+        bookmark: false,
     };
-    //save to DB
-    console.log(data);
+    const quizAppDB = loadJSON();
+    quizAppDB.questions.push(data);
+    console.log(quizAppDB);
+    saveJSON(quizAppDB);
+
+    //console.log(data);
     event.target.reset();
     resetInputPreview();
     event.target.elements.question.focus();
 
 });
-
 
 //----------Preview Questioncard---------------------
 form.addEventListener("input", () => {
@@ -64,3 +68,15 @@ function resetInputPreview(){
     });
 }
 
+function loadJSON(){
+    if(sessionStorage.getItem("quizAppDB")){
+        return JSON.parse(sessionStorage.getItem("quizAppDB"));
+    }else{
+        return { questions: [] };
+    }
+}
+
+function saveJSON(quizAppDB){
+    const jsonQuizAppDB = JSON.stringify(quizAppDB);
+    sessionStorage.setItem("quizAppDB", jsonQuizAppDB);
+}
