@@ -1,6 +1,8 @@
 
 let body = document.querySelector('[data-js="body"]');
 
+const quizAppDB = loadJSON();
+loadCounters();
 
 document.getElementById("checkbox-dark").addEventListener("click", ()=>{
     
@@ -17,4 +19,22 @@ document.getElementById("checkbox-dark").addEventListener("click", ()=>{
 
 
 
+function loadCounters(){
+    document.getElementById("questionCounter").textContent = quizAppDB.addQuestions;
+    document.getElementById("bookmarkCounter").textContent = quizAppDB.bookmarks;
+}
 
+
+
+
+function loadJSON(){
+    if(sessionStorage.getItem("quizAppDB")){
+        return JSON.parse(sessionStorage.getItem("quizAppDB"));
+    }else{
+        return {   
+                questions: [],
+                addQuestions: 0,
+                bookmarks: 0,
+                };
+    }
+}

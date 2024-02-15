@@ -13,16 +13,6 @@
     width: 100px;
     align-self: center;
 }
-
-
-
-
-
-
-
-
-
-
 .input{
   position: relative;
 }
@@ -41,7 +31,6 @@
   transform-origin: 0 0;
   background: var(--background-color);
 }
-
 .inputField {
   box-sizing: border-box;
   display: block;
@@ -50,9 +39,7 @@
   padding: 12px 8px;
   background: transparent;
   border-radius: 4px;
-  color: var(--text-color);
 }
-
 .inputField:focus + .inputLabel,
 .inputField:not(:placeholder-shown) + .inputLabel {
   transform: translate(.25rem, -65%) scale(.8);

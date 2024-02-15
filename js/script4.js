@@ -24,6 +24,7 @@ form.addEventListener("submit", (event) => {
     };
     const quizAppDB = loadJSON();
     quizAppDB.questions.push(data);
+    quizAppDB.addQuestions ++;
     console.log(quizAppDB);
     saveJSON(quizAppDB);
 
@@ -72,7 +73,11 @@ function loadJSON(){
     if(sessionStorage.getItem("quizAppDB")){
         return JSON.parse(sessionStorage.getItem("quizAppDB"));
     }else{
-        return { questions: [] };
+        return {   
+                questions: [],
+                addQuestions: 0,
+                bookmarks: 0,
+                };
     }
 }
 

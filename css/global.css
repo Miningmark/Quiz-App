@@ -44,13 +44,15 @@ h1, h2, h3{
     font-weight: bold;
     color: var(--text-color);
 }
-p, span, a, li, label{
+p, span, a, li, label, input{
     font-family: var(--font-normal), sans-serif;
     font-weight: 100;
     color: var(--text-color);
 }
 body{
     height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
     background-color: var(--background-color);
 }
 nav{
@@ -66,6 +68,7 @@ main{
     flex-direction: column;
     overflow: scroll;
     padding-bottom: 60px;
+    width: 100vw;
 }
 section{
     display: flex;
@@ -75,9 +78,10 @@ section{
 }
 header{
     text-align: center;
-    padding: 30px;
+    padding: 30px 0;
     background-color: var(--main-brand-color);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    width: 100%;
 }
