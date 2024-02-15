@@ -22,7 +22,9 @@ li{
     justify-content: center;
     align-items: center;
     width: 33.33%;
+    height: 52px;
     background-color: var(--background-color);
+    transition: 0.5s;
 }
 .menu-item {
     width: 100%;
@@ -31,4 +33,15 @@ li{
 }
 .activ-menu{
     background-color: var(--secondary-brand-color);
+}
+li .navIcon{
+    transition: 0.5s;
+    transform: translateY(0) ;
+}
+li:hover .navIcon{
+    background-color: var(--main-brand-color);
+    border-radius: 50%;
+    transform: translateY(-26px) ;
+    transition: 0.5s;
+    border: 8px solid var(--background-color);
 }
