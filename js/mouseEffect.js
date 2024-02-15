@@ -24,7 +24,6 @@ document.addEventListener('mousemove', function (event) {
 function mouseEffect(){
   shouldX = mousePosX;
   shouldY = mousePosY + offSetY;
-  console.log(shouldY);
   if(shouldY < borderTop){
     circle.style.top = borderTop + "px";
   }else if(shouldY > borderTop && shouldY < window.innerHeight - borderBottom + offSetY){
