@@ -4,6 +4,9 @@
     width: 90vw;
     padding: 10px;
     gap: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    background-color: var(--secondary-background-color);
 }
 .questionPreview{
     margin-top: 10px;
@@ -12,6 +15,11 @@
     padding: 5px;
     width: 100px;
     align-self: center;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1rem;
 }
 .input{
   position: relative;
@@ -29,7 +37,7 @@
   white-space: nowrap;
   transform: translate(0, 0);
   transform-origin: 0 0;
-  background: var(--background-color);
+  background: var(--secondary-background-color);
 }
 .inputField {
   box-sizing: border-box;

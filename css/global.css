@@ -15,11 +15,11 @@
 }
 .light{
     --text-color: black;
-    --main-brand-color: aqua;
+    --main-brand-color: #ffcd42;
     --secondary-brand-color: #fab700;
     --border-color: black;
     --background-color: white;
-    --secondary-background-color: white;
+    --secondary-background-color: rgb(238, 239, 198);
     --menu-background-color: antiquewhite;  
 }
 .dark{
