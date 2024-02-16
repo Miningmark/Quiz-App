@@ -52,6 +52,10 @@ window.addEventListener('mousemove', function (event) {
   mouseEffect();
 });
 
+window.addEventListener("touchmove", function (event) {
+  console.log("fegaghj");
+});
+
 
 
 
