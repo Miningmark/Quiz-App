@@ -2,6 +2,8 @@
 
 const circle = document.getElementById("circle");
 
+const circleSize = circle.clientHeight;
+console.log(circleSize);
 let mousePosX = 0;
 let mousePosY = 0;
 let isX = 0;
@@ -9,7 +11,7 @@ let isY = 0;
 let shouldX = 0;
 let shouldY = 0;
 const offSetY = 0;
-const borderTop = 100;
+const borderTop = 0;
 const borderBottom = 52;
 
 document.addEventListener('mousemove', function (event) {
@@ -22,10 +24,11 @@ document.addEventListener('mousemove', function (event) {
 
 
 function mouseEffect(){
-  shouldX = mousePosX;
-  shouldY = mousePosY + offSetY;
+  shouldX = mousePosX - circleSize / 2;
+  shouldY = mousePosY + offSetY - circleSize / 2;
   if(shouldY < borderTop){
-    circle.style.top = borderTop + "px";
+    //circle.style.top = borderTop + "px";
+    circle.style.top = shouldY + "px";
   }else if(shouldY > borderTop && shouldY < window.innerHeight - borderBottom + offSetY){
     circle.style.top = shouldY + "px";
   }else{
