@@ -52,8 +52,11 @@ window.addEventListener('mousemove', function (event) {
   mouseEffect();
 });
 
+//Touch Event to mousePosition
 window.addEventListener("touchmove", function (event) {
-  console.log("fegaghj");
+  mousePosX = event.touches[0].clientX;
+  mousePosY = event.touches[0].clientY;
+  mouseEffect();
 });
 
 
