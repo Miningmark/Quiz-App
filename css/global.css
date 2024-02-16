@@ -52,7 +52,7 @@ p, span, a, li, label, input{
 body{
     
     width: 100vw;
-    
+    position: relative;
     overflow-x: hidden;
     background-color: var(--background-color);
 }
