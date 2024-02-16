@@ -12,10 +12,10 @@ function generateBackground(){
   hexDiv.innerHTML = "";
   const displaySizeY = window.innerHeight;
   const displaySizeX = window.innerWidth;
-  console.log("displaySizeX ", displaySizeX, "displaySizeY ", displaySizeY);
+  //console.log("displaySizeX ", displaySizeX, "displaySizeY ", displaySizeY);
   const rows = Math.floor(displaySizeY / (110 - 32)) + 1;
   const columns = Math.floor(displaySizeX / 100) + 2;
-  console.log("rows ", rows, "columns", columns);
+  //console.log("rows ", rows, "columns", columns);
 
   for(let i = 0; i < rows; i++){
     const row = document.createElement("div");
@@ -35,7 +35,7 @@ function generateBackground(){
 const circle = document.getElementById("circle");
 
 const circleSize = circle.clientHeight;
-console.log(circleSize);
+//console.log(circleSize);
 let mousePosX = 0;
 let mousePosY = 0;
 let isX = 0;
