@@ -1,5 +1,37 @@
 
 
+generateBackground();
+
+window.addEventListener('resize', function (event) {
+  generateBackground();
+});
+
+
+function generateBackground(){
+  const hexDiv = document.querySelector(".hexDiv");
+  hexDiv.innerHTML = "";
+  const displaySizeY = window.innerHeight;
+  const displaySizeX = window.innerWidth;
+  console.log("displaySizeX ", displaySizeX, "displaySizeY ", displaySizeY);
+  const rows = Math.floor(displaySizeY / (110 - 32)) + 1;
+  const columns = Math.floor(displaySizeX / 100) + 2;
+  console.log("rows ", rows, "columns", columns);
+
+  for(let i = 0; i < rows; i++){
+    const row = document.createElement("div");
+    row.classList.add("row");
+
+    for(let j = 0; j < columns; j++){
+      const column = document.createElement("div");
+      column.classList.add("hexagon");
+      row.append(column);
+    }
+    hexDiv.append(row);
+  }  
+}
+
+
+
 const circle = document.getElementById("circle");
 
 const circleSize = circle.clientHeight;
@@ -14,7 +46,7 @@ const offSetY = 0;
 const borderTop = 0;
 const borderBottom = 52;
 
-document.addEventListener('mousemove', function (event) {
+window.addEventListener('mousemove', function (event) {
   mousePosX = event.clientX;
   mousePosY = event.clientY;
   mouseEffect();
@@ -26,6 +58,7 @@ document.addEventListener('mousemove', function (event) {
 function mouseEffect(){
   shouldX = mousePosX - circleSize / 2;
   shouldY = mousePosY + offSetY - circleSize / 2;
+  /*
   if(shouldY < borderTop){
     //circle.style.top = borderTop + "px";
     circle.style.top = shouldY + "px";
@@ -34,6 +67,8 @@ function mouseEffect(){
   }else{
     circle.style.top = window.innerHeight - borderBottom + offSetY + "px";
   }
+  */
+  circle.style.top = shouldY + "px";
   circle.style.left = shouldX + "px";
 }
 

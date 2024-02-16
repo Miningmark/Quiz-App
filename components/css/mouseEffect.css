@@ -47,6 +47,9 @@
     background-color: #111;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+.light .hexDiv .hexagon{
+  background-color: antiquewhite;
+}
 
 @media only screen and (min-width: 800px){
   .circle{

@@ -1,3 +1,27 @@
+.profileWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw);
+    height: calc(100vh - 162px);
+}
+.profileSection{
+    max-width: 800px;
+    width: 90vw;
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--secondary-background-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media only screen and (min--width: 800px) {
+    .profileSection{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+}
 .profile-person{
     display: flex;
     flex-direction: row;
