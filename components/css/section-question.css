@@ -19,13 +19,24 @@
     right: 15px;
     width: 48px;
     height: 48px;
-    background-image: url('../../assets/icons/bookmark_border_black.svg'); 
+     
     background-size: cover;
     cursor: pointer;
     display: inline-block;
 }
-.bookmark-checked {
-    background-image: url('../../assets/icons/bookmark_black.svg'); 
+.light main section .question-bookmark-label{
+    background-image: url('../../assets/icons/bookmark_border_black.svg');
+}
+.light main section .bookmark-checked {
+    background-image: url('../../assets/icons/bookmark_black.svg') !important; 
+    z-index: 10;
+}
+.dark main section .question-bookmark-label{
+    background-image: url('../../assets/icons/bookmark_border_white.svg');
+}
+.dark main section .bookmark-checked {
+    background-image: url('../../assets/icons/bookmark_white.svg') !important; 
+    z-index: 1;
 }
 .question-text{
     margin: 20px;

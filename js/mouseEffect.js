@@ -34,8 +34,7 @@ function generateBackground(){
 
 const circle = document.getElementById("circle");
 
-const circleSize = circle.clientHeight;
-//console.log(circleSize);
+let circleSize = circle.clientHeight;
 let mousePosX = 0;
 let mousePosY = 0;
 let isX = 0;
@@ -45,7 +44,9 @@ let shouldY = 0;
 const offSetY = 0;
 const borderTop = 0;
 const borderBottom = 52;
+let flag = false;
 
+//Mousemove Event to mousePosition
 window.addEventListener('mousemove', function (event) {
   mousePosX = event.clientX;
   mousePosY = event.clientY;
@@ -60,22 +61,18 @@ window.addEventListener("touchmove", function (event) {
 });
 
 
-
-
 function mouseEffect(){
+  circleSize = circle.clientHeight;
   shouldX = mousePosX - circleSize / 2;
   shouldY = mousePosY + offSetY - circleSize / 2;
-  /*
-  if(shouldY < borderTop){
-    //circle.style.top = borderTop + "px";
-    circle.style.top = shouldY + "px";
-  }else if(shouldY > borderTop && shouldY < window.innerHeight - borderBottom + offSetY){
-    circle.style.top = shouldY + "px";
-  }else{
-    circle.style.top = window.innerHeight - borderBottom + offSetY + "px";
-  }
-  */
   circle.style.top = shouldY + "px";
   circle.style.left = shouldX + "px";
+  addMoveClass();
+}
+
+function addMoveClass(){
+  if(!flag){
+    document.querySelector('.circle').classList.add('move');
+  }
 }
 

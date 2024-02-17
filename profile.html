@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="shortcut icon" href="/assets/icons/help_outline_black.svg">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/assets/icons/help_outline_black.svg" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script3.js" defer></script>
     <script src="js/loadstyle.js" defer></script>
     <script src="js/mouseEffect.js" defer></script>
-</head>
-<body class="light" data-js="body">
+  </head>
+  <body class="light" data-js="body">
     <div class="hexDiv"></div>
     <div id="circle" class="circle"></div>
     <header>
-        <h1>Quiz App</h1>
+      <h1>Quiz App</h1>
     </header>
     <main>
-        <div class="profileWrapper">
-            <section class="profileSection">
-                <div class="profile-person">
-                    <img src="assets/icons/person_black.svg" alt="Person image">
-                    <h1>Name Name</h1>
-                </div>
-                <div class="profile-about">
-                    <h2>About me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at earum doloremque numquam sunt assumenda magnam ipsa ipsum dolorem sapiente odio dolores aspernatur aliquam a doloribus eaque, fugiat ex expedita consequatur modi molestiae corrupti explicabo! Unde necessitatibus perferendis dolores sed!</p>
-                </div>
-                <div class="profile-counter">
-                    <span class="counter">
-                        <img src="assets/icons/help_outline_black.svg" alt="question"> 
-                        <span id="questionCounter">12</span>
-                    </span>
-                    <span class="counter">
-                        <img src="assets/icons/bookmark_border_black.svg" alt="question"> 
-                        <span id="bookmarkCounter">12</span>
-                    </span>
-                </div>
-                <div class="profile-settings">
-                    <h2>Settings</h2>
-                    <div class="profile-dark-mode">
-                        <h3>Dark Mode</h3>
-                        <label class="switch">
-                            <input type="checkbox" id="checkbox-dark">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
+      <div class="profileWrapper">
+        <section class="profileSection">
+          <div class="profile-person">
+            <span class="profilePersonIcon"></span>
+            
+            <h1>Name Name</h1>
+          </div>
+          <div class="profile-about">
+            <h2>About me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at
+              earum doloremque numquam sunt assumenda magnam ipsa ipsum dolorem
+              sapiente odio dolores aspernatur aliquam!
+            </p>
+          </div>
+          <div class="profile-counter">
+            <span class="counter">
+              <span class="counterIcon profileCounterQuestion"></span>
+              <span id="questionCounter">12</span>
+            </span>
+            <span class="counter">
+              <span class="counterIcon profileCounterBookmark"></span>
+              <span id="bookmarkCounter">12</span>
+            </span>
+          </div>
+          <div class="profile-settings">
+            <h2>Settings</h2>
+            <div class="profile-dark-mode">
+              <h3>Dark Mode</h3>
+              <label class="switch">
+                <input type="checkbox" id="checkbox-dark" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li><a class="menu-item" href="./index.html"><img class="navIcon" src="assets/icons/home_black.svg" alt="home icon"></a></li>
-                <li><a class="menu-item" href="./bookmark.html"><img class="navIcon" src="assets/icons/bookmark_border_black.svg" alt="bookmark icon"></a></li>
-                <li><a class="menu-item" href="./newQuestion.html"><img class="navIcon" src="assets/icons/add_black.svg" alt="add icon"></a></li>
-                <li><a class="menu-item activ-menu" href="./profile.html"><img class="navIcon" src="assets/icons/person_black.svg" alt="person icon"></a></li>
-            </ul>
-        </nav>
-    </footer>  
-
-</body>
+      <nav>
+        <ul>
+          <li>
+            <a class="menu-item" href="./index.html"
+              ><img
+                class="navIcon"
+                src="assets/icons/home_black.svg"
+                alt="home icon"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-item" href="./bookmark.html"
+              ><img
+                class="navIcon"
+                src="assets/icons/bookmark_border_black.svg"
+                alt="bookmark icon"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-item" href="./newQuestion.html"
+              ><img
+                class="navIcon"
+                src="assets/icons/add_black.svg"
+                alt="add icon"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-item activ-menu" href="./profile.html"
+              ><img
+                class="navIcon"
+                src="assets/icons/person_black.svg"
+                alt="person icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

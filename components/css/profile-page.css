@@ -29,6 +29,21 @@
     align-items: center;
     width: 100%;
 }
+.profilePersonIcon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid var(--border-color) 2px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center center;
+}
+.light main div section div .profilePersonIcon{
+    background-image: url('../../assets/icons/person_black.svg');
+}
+.dark main div section div .profilePersonIcon{
+    background-image: url('../../assets/icons/person_white.svg');
+}
 .profile-person img{
     width: 80px;
     height: 80px;
@@ -55,7 +70,32 @@
     border: solid var(--border-color) 2px;
     display: flex;
     align-items: center;
+    justify-content: end;
     background-color: var(--secondary-background-color);
+    height: 35px;
+    width: 75px;
+    position: relative;
+    font-size: 1.3rem;
+}
+.counterIcon{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.light main div section div span .profileCounterQuestion{
+    background-image: url('../../assets/icons/help_outline_black.svg');  
+}
+.dark main div section div span .profileCounterQuestion{
+    background-image: url('../../assets/icons/help_outline_white.svg');  
+}
+.light main div section div span .profileCounterBookmark{
+    background-image: url('../../assets/icons/bookmark_border_black.svg');     
+}
+.dark main div section div span .profileCounterBookmark{
+    background-image: url('../../assets/icons/bookmark_border_white.svg');     
 }
 .profile-counter img{
     width: 30px;
