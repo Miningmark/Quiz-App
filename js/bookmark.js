@@ -20,6 +20,7 @@ allBookmarks.forEach(function (labelIcon){
             quizAppDB.bookmarks++;
         }
         saveJSON(quizAppDB);
+        location.reload();
     });
 
 });

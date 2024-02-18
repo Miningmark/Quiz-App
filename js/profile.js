@@ -2,7 +2,7 @@ import {loadJSON, saveJSON, deleteJSON} from "./loadSaveDeleteDB.js"
 
 let body = document.querySelector('[data-js="body"]');
 
-const quizAppDB = loadJSON();
+let quizAppDB = loadJSON();
 loadCounters();
 
 document.getElementById("checkbox-dark").addEventListener("click", () => {
