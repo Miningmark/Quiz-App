@@ -25,6 +25,22 @@ allBookmarks.forEach(function (labelIcon){
 
 });
 
+const deleteQuestionButtons = document.querySelectorAll(".deleteQuestionButton");
+deleteQuestionButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        let pos = Number(button.id.replace("buttonID", ""));
+        if(quizAppDB.questions[pos].bookmark){
+            quizAppDB.bookmarks --;
+        }
+        console.log(button.id.replace("buttonID", ""));
+        console.log(pos);
+        let questions = quizAppDB.questions
+        quizAppDB.questions = questions.slice(0, pos).concat(questions.slice(pos + 1));
+        saveJSON(quizAppDB);
+        location.reload();
+    });
+});
+
 const allShowAnswerButtons = document.querySelectorAll('.question-show-answer');
 allShowAnswerButtons.forEach(function (button) {
     button.addEventListener('click', function(){
@@ -54,6 +70,7 @@ function loadQuestions(){
                     <div class="question-categories-box">
                         ${categories}
                     </div>
+                    <button type="button" class="deleteQuestionButton" id="buttonID${i}"></button>
                 </section>
         `;
             main.innerHTML += questionItem;
