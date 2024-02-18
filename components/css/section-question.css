@@ -76,3 +76,21 @@
 .hide{
     opacity: 0;
 }
+.deleteQuestionButton{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+}
+.light main section .deleteQuestionButton{
+    background-image: url(../../assets/icons/delete_black.svg);
+}
+.dark main section .deleteQuestionButton{
+    background-image: url(../../assets/icons/delete_white.svg);
+}
