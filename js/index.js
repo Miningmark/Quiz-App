@@ -24,6 +24,13 @@ allBookmarks.forEach(function (labelIcon){
 
 });
 
+const deleteQuestionButtons = document.querySelectorAll(".deleteQuestionButton");
+deleteQuestionButtons.forEach(function (button) {
+    button.addEventListener(("click", function () {
+        
+    }));
+});
+
 
 const allShowAnswerButtons = document.querySelectorAll('.question-show-answer');
 allShowAnswerButtons.forEach(function (button) {
