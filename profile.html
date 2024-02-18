@@ -6,7 +6,7 @@
     <title>Quiz App</title>
     <link rel="shortcut icon" href="/assets/icons/help_outline_black.svg" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script3.js" defer></script>
+    <script type="module" src="js/profile.js" defer></script>
     <script src="js/loadstyle.js" defer></script>
     <script src="js/mouseEffect.js" defer></script>
   </head>
@@ -44,12 +44,16 @@
           </div>
           <div class="profile-settings">
             <h2>Settings</h2>
-            <div class="profile-dark-mode">
+            <div class="profile-settings-options">
               <h3>Dark Mode</h3>
               <label class="switch">
                 <input type="checkbox" id="checkbox-dark" />
                 <span class="slider round"></span>
               </label>
+            </div>
+            <div class="profile-settings-options">
+              <h3>Reset all Data</h3>
+              <button type="button" id="deleteAllButton" >Delete ALL</button>
             </div>
           </div>
         </section>

@@ -109,9 +109,12 @@
     width: 90%;
     padding-top: 10px;
 }
-.profile-dark-mode{
+.profile-settings-options{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
