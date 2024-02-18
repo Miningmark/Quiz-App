@@ -19,7 +19,7 @@ allBookmarks.forEach(function (labelIcon){
             quizAppDB.questions[labelIcon.id.replace("labelID", "")].bookmark = true;
             quizAppDB.bookmarks++;
         }
-        saveJSON(quizAppDB);
+        saveJSON(quizAppDB); 
     });
 
 });
