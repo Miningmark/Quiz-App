@@ -26,9 +26,17 @@ allBookmarks.forEach(function (labelIcon){
 
 const deleteQuestionButtons = document.querySelectorAll(".deleteQuestionButton");
 deleteQuestionButtons.forEach(function (button) {
-    button.addEventListener(("click", function () {
+    button.addEventListener("click", function () {
+        console.log(button.id.replace("buttonID", ""));
+
+
+
+
+
+
+
         
-    }));
+    });
 });
 
 
