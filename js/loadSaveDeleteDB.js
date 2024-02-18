@@ -1,8 +1,4 @@
 
-
-
-
-
 export function loadJSON() {
     if (sessionStorage.getItem("quizAppDB")) {
         return JSON.parse(sessionStorage.getItem("quizAppDB"));

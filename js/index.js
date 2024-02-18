@@ -1,9 +1,9 @@
+import {loadJSON, saveJSON, deleteJSON} from "./loadSaveDeleteDB.js"
+
 
 const quizAppDB = loadJSON();
 
 loadQuestions();
-
-
 
 
 const allBookmarks = document.querySelectorAll('.question-bookmark-label');
@@ -65,20 +65,3 @@ function loadQuestions(){
 
 }
 
-
-function loadJSON(){
-    if(sessionStorage.getItem("quizAppDB")){
-        return JSON.parse(sessionStorage.getItem("quizAppDB"));
-    }else{
-        return {   
-                questions: [],
-                addQuestions: 0,
-                bookmarks: 0,
-                };
-    }
-}
- 
-function saveJSON(quizAppDB){
-    const jsonQuizAppDB = JSON.stringify(quizAppDB);
-    sessionStorage.setItem("quizAppDB", jsonQuizAppDB);
-}
