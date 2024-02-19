@@ -40,7 +40,7 @@
 
 .row{
   display: inline-flex;
-  margin-top: -32px;
+  margin-top: -31px;
   margin-left: -50px;
 }
 
@@ -52,11 +52,13 @@
     width: 100px;
     height: 110px;
     margin: 2px;
-    background-color: #111;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+.dark .hexDiv .hexagon{
+  background-color: #111;
+}
 .light .hexDiv .hexagon{
-  background-color: antiquewhite;
+  background-color: rgb(224, 210, 192);
 }
 
 @media only screen and (min-width: 800px){
